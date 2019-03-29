@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shield</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_powerbutton">Powerbutton</string>
+    <string name="title_activity_message">Message</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_safety">SafetyActivity</string>
+    <string name="title_activity_rate">Rate</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_fir">Fir</string>
+
+</resources>

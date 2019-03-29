@@ -1,0 +1,208 @@
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bag2"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="42dp" >
+
+        <Button
+            android:id="@+id/women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/women"
+            android:onClick="call" />
+
+ <Space
+           android:layout_width="0dp"
+           android:layout_height="1dp"
+           android:layout_weight="1" >
+       </Space>
+
+ <Button
+     android:id="@+id/police"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/police"
+     android:onClick="call"
+      />
+
+ <Space
+           android:layout_width="0dp"
+           android:layout_height="1dp"
+           android:layout_weight="1" >
+       </Space>
+
+ <Button
+     android:id="@+id/ambulance"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/ambulance"
+     android:onClick="call"
+      />
+
+ <Space
+           android:layout_width="0dp"
+           android:layout_height="1dp"
+           android:layout_weight="1" >
+       </Space>
+
+    </LinearLayout>
+
+    
+        <Space
+           android:layout_width="0dp"
+           android:layout_height="1dp"
+           android:layout_weight="1" >
+       </Space>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="  POLICE" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginRight="18dp"
+        android:text="AMBULANCE" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contacts"
+        android:layout_below="@+id/siren"
+        android:text="CONTACTS" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/siren"
+        android:text="    SIREN" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:text="HELPLINE" />
+
+    <Button
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/contacts1" 
+        android:onClick="contact"
+        />
+
+    <Button
+        android:id="@+id/siren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contacts"
+        android:layout_alignLeft="@+id/textView3"
+        android:onClick="play"
+        android:background="@drawable/siren" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_toRightOf="@+id/contacts"
+        android:text="MADE   IN   INDIA"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/textView4"
+        android:src="@drawable/girl" />
+
+    <Button
+        android:id="@+id/message"
+        android:onClick="message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contacts"
+        android:layout_alignLeft="@+id/textView2"
+      android:background="@drawable/message"
+       />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_toLeftOf="@+id/textView6"
+         />
+
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lat"
+        android:layout_alignBottom="@+id/lat"
+        android:layout_toRightOf="@+id/textView2"
+        />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="longitute" 
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toLeftOf="@+id/textView6"
+        android:text="latitute"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="WELCOME     "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

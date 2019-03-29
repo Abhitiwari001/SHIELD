@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item
+        android:id="@+id/About"
+      android:icon="@drawable/safe"
+       android:title="About">
+</item>
+
+    <item
+        android:id="@+id/Safety"
+       android:title="Safety Tips"     
+       >
+</item>
+<item
+        android:id="@+id/Fir"
+       android:title="FIR">
+</item>
+<item
+        android:id="@+id/Rate"
+       android:title="Rate Us">
+</item>
+<item
+        android:id="@+id/Feedback"
+       android:title="Feedback">
+</item>
+</menu>

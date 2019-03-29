@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shield"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/abhi"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.shield.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.shield.Splash"
+            android:label="@string/title_activity_splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.shield.Message"
+            android:label="@string/title_activity_message" >
+        </activity>
+        <activity
+            android:name="com.example.shield.ContactsActivity"
+            android:label="@string/title_activity_contacts" >
+        </activity>
+        <activity
+            android:name="com.example.shield.Contacts"
+            android:label="@string/title_activity_contacts" >
+        </activity>
+        <activity
+            android:name="com.example.shield.NavigationActivity"
+            android:label="@string/title_activity_navigation" >
+        </activity>
+        <activity
+            android:name="com.example.shield.ItemListActivity"
+            android:label="@string/title_item_list" >
+        </activity>
+        <activity
+            android:name="com.example.shield.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".ItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ItemListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.shield.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="com.example.shield.SafetyActivity"
+            android:label="@string/title_activity_safety" >
+        </activity>
+        <activity
+            android:name="com.example.shield.Rate"
+            android:label="@string/title_activity_rate" >
+        </activity>
+        <activity
+            android:name="com.example.shield.FeedbackActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name="com.example.shield.Fir"
+            android:label="@string/title_activity_fir" >
+        </activity>
+    </application>
+
+</manifest>
